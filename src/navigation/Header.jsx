@@ -15,7 +15,6 @@ function Header() {
         <Link to="/experience" className="hover:underline">Experience</Link>
         <Link to="/skills" className="hover:underline">Skills</Link>
         <Link to="/portfolio" className="hover:underline">Portfolio</Link>
-        <Link to="/contact" className="hover:underline">Contact</Link>
       </nav>
     </header>
   );

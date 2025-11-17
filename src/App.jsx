@@ -4,7 +4,6 @@ import Header from "./navigation/Header";
 import Home from "./body/Home";
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
