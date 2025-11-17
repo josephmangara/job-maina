@@ -13,9 +13,9 @@ function Skills() {
 
   return (
     <div className="container mx-auto">
-      <h2 className="text-xl md:text-2xl text-center font-semibold p-4">Skills</h2>
+      <h2 className="text-xl md:text-2xl text-center font-semibold p-6">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <GiVideoCamera className="text-6xl"/>
@@ -23,7 +23,7 @@ function Skills() {
           <p className="text-center">Shooting, writing scripts, and editing stories.</p>
         </div>
 
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <MdGTranslate className="text-5xl"/>
@@ -31,7 +31,7 @@ function Skills() {
           <p className="text-center">Translations of video,audio, and written content.</p>
         </div>
 
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <BsBroadcastPin className="text-5xl"/>
@@ -39,7 +39,7 @@ function Skills() {
           <p className="text-center">On-air appearances and coordinating live shots.</p>
         </div>
 
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <GiArchiveResearch className="text-5xl"/>
@@ -47,7 +47,7 @@ function Skills() {
           <p className="text-center">Proactive research skills and ethical journalism.</p>
         </div>
 
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <GiTalk className="text-5xl"/>
@@ -55,7 +55,7 @@ function Skills() {
           <p className="text-center">Social media management.</p>
         </div>
 
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <RiPresentationFill className="text-5xl"/>
@@ -63,7 +63,7 @@ function Skills() {
           <p className="text-center">Excellent spoken and written communication skills in both English and Kiswahili.</p>
         </div>
 
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <FaUsersLine className="text-5xl"/>
@@ -71,7 +71,7 @@ function Skills() {
           <p className="text-center">Developing community sources for unique insights and reports on impactful issues.</p>
         </div>
 
-        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
+        <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
           <div className="flex justify-center mb-3">
             <RiNewspaperLine className="text-5xl"/>
