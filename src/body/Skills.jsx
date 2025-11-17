@@ -6,76 +6,77 @@ import { GiArchiveResearch } from "react-icons/gi";
 import { FaUsersLine } from "react-icons/fa6";
 import { GiTalk } from "react-icons/gi";
 import { RiNewspaperLine } from "react-icons/ri";
+import { RiPresentationFill } from "react-icons/ri";
 
 
 function Skills() {
 
   return (
     <div className="container mx-auto">
-      <h2 className="text-xl md:text-2xl text-center p-4">Skills</h2>
+      <h2 className="text-xl md:text-2xl text-center font-semibold p-4">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <GiVideoCamera />
+          <div className="flex justify-center mb-3">
+            <GiVideoCamera className="text-6xl"/>
           </div>
-          <p>Shooting, writing scripts, and editing stories.</p>
+          <p className="text-center">Shooting, writing scripts, and editing stories.</p>
         </div>
 
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <MdGTranslate />
+          <div className="flex justify-center mb-3">
+            <MdGTranslate className="text-5xl"/>
           </div>
-          <p>Translations of video,audio, and written content.</p>
+          <p className="text-center">Translations of video,audio, and written content.</p>
         </div>
 
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <BsBroadcastPin />
+          <div className="flex justify-center mb-3">
+            <BsBroadcastPin className="text-5xl"/>
           </div>
-          <p>On-air appearances and coordinating live shots.</p>
+          <p className="text-center">On-air appearances and coordinating live shots.</p>
         </div>
 
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <GiArchiveResearch />
+          <div className="flex justify-center mb-3">
+            <GiArchiveResearch className="text-5xl"/>
           </div>
-          <p>Proactive research skills and ethical journalism.</p>
+          <p className="text-center">Proactive research skills and ethical journalism.</p>
         </div>
 
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <GiTalk />
+          <div className="flex justify-center mb-3">
+            <GiTalk className="text-5xl"/>
           </div>
-          <p>Social media management.</p>
+          <p className="text-center">Social media management.</p>
         </div>
 
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <ImHeadphones />
+          <div className="flex justify-center mb-3">
+            <RiPresentationFill className="text-5xl"/>
           </div>
-          <p>Excellent spoken and written communication skills in both English and Kiswahili.</p>
+          <p className="text-center">Excellent spoken and written communication skills in both English and Kiswahili.</p>
         </div>
 
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <FaUsersLine />
+          <div className="flex justify-center mb-3">
+            <FaUsersLine className="text-5xl"/>
           </div>
-          <p>Developing community sources for unique insights and reports on impactful issues.</p>
+          <p className="text-center">Developing community sources for unique insights and reports on impactful issues.</p>
         </div>
 
-        <div className="border border-amber-500 p-2">
+        <div className="border border-amber-500 p-4 rounded-xl shadow-md hover:shadow-2xl hover:scale-102 transition">
           {/* <img src="" alt="" /> */}
-          <div className="flex justify-center">
-            <RiNewspaperLine />
+          <div className="flex justify-center mb-3">
+            <RiNewspaperLine className="text-5xl"/>
           </div>
-          <p>News judgment.</p>
+          <p className="text-center">News judgment.</p>
         </div>
       </div>
     </div>
