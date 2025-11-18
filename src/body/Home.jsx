@@ -49,9 +49,17 @@ function Home() {
         </div>
       </section>
 
-      <section>
-        <h2>Interests & Hobbies</h2>
+      <section className="mb-6">
+        <h2 className="text-xl md:text-2xl font-semibold p-6">Interests & Hobbies</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>Learning new languages and accents</li>
+          <li>Following local and geopolitical developments</li>
+          <li>Watching and writing comedy</li>
+          <li>Leadership activities</li>
+          <li>Swimming</li>
+        </ul>
       </section>
+
       
     </div>
 )
