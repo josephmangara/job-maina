@@ -20,8 +20,33 @@ function Home() {
       <Skills />
       <Experience />
 
-      <section>
-        <h2>Education</h2>
+      <section className="container mx-auto p-6">
+        <h2 className="text-xl md:text-2xl text-center font-semibold mb-6">Education</h2>
+        <div className="mb-6">
+          <h3 className="text-lg md:text-xl font-semibold">
+            The Technical University of Kenya (School of Creative Arts and Media)
+          </h3>
+          <p className="text-sm text-gray-600 mb-2">Aug 2017 - Dec 2021</p>
+          <p className="font-medium">
+            Pursued a Bachelor’s Degree in Journalism and Mass Communication.
+          </p>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-lg md:text-xl font-semibold">Ndururumo High School</h3>
+          <p className="text-sm text-gray-600 mb-2">2013 - 2016</p>
+          <p className="font-medium">
+            Attained the Kenya Certificate of Secondary Education [KCSE] with a Grade B plain.
+          </p>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-lg md:text-xl font-semibold">Kahawa Primary School</h3>
+          <p className="text-sm text-gray-600 mb-2">2005 - 2012</p>
+          <p className="font-medium">
+            Obtained the Kenya Certificate of Primary Education [KCPE].
+          </p>
+        </div>
       </section>
 
       <section>
