@@ -1,9 +1,40 @@
+import {useState} from "react";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+
+
 function Experience() {
+  const videos = [
+    {
+      id: 1,
+      src: "https://www.youtube.com/embed/b5mqWYc3_5I",
+      title: "Washukiwa wawili wa genge la nyuki wapigwa risasi na polisi kaunti ya Nakuru",
+    },
+    {
+      id: 2,
+      src: "https://www.youtube.com/embed/78sxU2g8fVI",
+      title: "Tume huru ya IEBC yaanza rasmi kusambaza vifaa vya uchaguzi",
+    },
+    {
+      id: 3,
+      src: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fparadisepointnyahururu%2Fvideos%2F357260065685320%2F&show_text=false&width=560&t=0",
+      title: "ZIWA TV Facebook Video",
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % videos.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
+  };
+
+
   return (
     <div className="container mx-auto">
-      <h2 className="text-xl md:text-2xl text-center font-semibold p-6">
-        Experience
-      </h2>
+      <h2 className="text-xl md:text-2xl text-center font-semibold p-6">Experience</h2>
 
       {/* K24 Experience */}
       <div className="mb-6">
@@ -17,60 +48,57 @@ function Experience() {
           <li>Provided coverage for key events and feature stories.</li>
           <li>Collected and reported news stories.</li>
         </ul>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <div className="aspect-video">
-                <iframe
-                className="w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/b5mqWYc3_5I"
-                title="Washukiwa wawili wa genge la nyuki wapigwa risasi na polisi kaunti ya Nakuru"
-                loading="lazy"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                ></iframe>
-            </div>
-
-            <div className="aspect-video">
-                <iframe
-                className="w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/78sxU2g8fVI"
-                title="Tume huru ya IEBC yaanza rasmi kusambaza vifaa vya uchaguzi"
-                loading="lazy"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                ></iframe>
-            </div>
-        </div>
-
       </div>
 
       {/* ZIWA TV Experience */}
       <div className="mb-6">
         <h3 className="text-lg md:text-xl font-semibold">Intern at ZIWA TV</h3>
         <p className="text-sm text-gray-600 mb-2">Aug 2020 - Nov 2020</p>
-
-        <p className="font-medium">
-            Reporter and News Anchor at ZIWA TV, a local Kiswahili station.
-        </p>
-
-        <div className="w-full">
-            <div className="relative w-full max-w-[800px] pb-[56.25%] h-0 overflow-hidden rounded-lg">
-            <iframe
-                loading="lazy"
-                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fparadisepointnyahururu%2Fvideos%2F357260065685320%2F&show_text=false&width=560&t=0"
-                className="absolute top-0 left-0 w-full h-full"
-                style={{ border: "none", overflow: "hidden" }}
-                scrolling="no"
-                frameBorder="0"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-            </div>
-        </div>
+        <p className="font-medium">Reporter and News Anchor at ZIWA TV, a local Kiswahili station.</p>
       </div>
 
+      {/* Videos */}
+      <div className="relative  mx-auto">
+        <div className="overflow-hidden">
+            <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{
+                    transform: `translateX(-${currentIndex * 50}%)`,
+                }}
+            >
+                {videos.map((video) => (
+                    <div 
+                    key={video.id} 
+                    className="shrink-0 w-full md:w-1/2 px-2"
+                >
+                    <div className="aspect-video rounded-lg overflow-hidden">
+                        <iframe 
+                            className="w-full h-full"
+                            src={video.src}
+                            title={video.title}
+                            loading="lazy"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+                ))}
+            </div>
+        </div>
+        
+        <button
+            onClick={prevSlide}
+            className="absolute top-1/2 -translate-y-1/2 -left-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
+        ><FiChevronLeft className="text-2xl" /></button>
+        <button
+            onClick={nextSlide}
+            className="absolute top-1/2 -translate-y-1/2 -right-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
+        >
+            <FiChevronRight className="text-2xl" />
+        </button>
+        
+      </div>
 
     </div>
   );
