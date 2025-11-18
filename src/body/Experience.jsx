@@ -1,6 +1,5 @@
-import {useState} from "react";
+import { useState } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-
 
 function Experience() {
   const videos = [
@@ -31,7 +30,6 @@ function Experience() {
     setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
   };
 
-
   return (
     <div className="container mx-auto">
       <h2 className="text-xl md:text-2xl text-center font-semibold p-6">Experience</h2>
@@ -40,7 +38,8 @@ function Experience() {
       <div className="mb-6">
         <h3 className="text-lg md:text-xl font-semibold">Television Exposure at K24</h3>
         <p className="text-sm text-gray-600 mb-2">Aug 2021 - Oct 2022</p>
-        <p className="font-medium">Reporter and Intern at K24 Television, a leading television station in Kenya.</p>
+        <p className="font-medium">
+          Reporter and Intern at K24 Television, a leading television station in Kenya.</p>
         <ul className="list-disc pl-6 mt-2 space-y-1">
           <li>Translated news items from English to Kiswahili.</li>
           <li>Pioneered daily pitch sessions for original story ideas.</li>
@@ -58,48 +57,43 @@ function Experience() {
       </div>
 
       {/* Videos */}
-      <div className="relative  mx-auto">
+      <div className="relative mx-auto">
         <div className="overflow-hidden">
-            <div
-                className="flex transition-transform duration-500 ease-in-out"
-                style={{
-                    transform: `translateX(-${currentIndex * 50}%)`,
-                }}
-            >
-                {videos.map((video) => (
-                    <div 
-                    key={video.id} 
-                    className="shrink-0 w-full md:w-1/2 px-2"
-                >
-                    <div className="aspect-video rounded-lg overflow-hidden">
-                        <iframe 
-                            className="w-full h-full"
-                            src={video.src}
-                            title={video.title}
-                            loading="lazy"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * 50}%)` }}
+          >
+            {videos.map((video) => (
+              <div key={video.id} className="shrink-0 w-full md:w-1/2 px-2">
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    className="w-full h-full"
+                    src={video.src}
+                    title={video.title}
+                    loading="lazy"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
-                ))}
-            </div>
+              </div>
+            ))}
+          </div>
         </div>
-        
-        <button
-            onClick={prevSlide}
-            className="absolute top-1/2 -translate-y-1/2 -left-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
-        ><FiChevronLeft className="text-2xl" /></button>
-        <button
-            onClick={nextSlide}
-            className="absolute top-1/2 -translate-y-1/2 -right-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
-        >
-            <FiChevronRight className="text-2xl" />
-        </button>
-        
-      </div>
 
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 -translate-y-1/2 -left-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
+        >
+          <FiChevronLeft className="text-2xl" />
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute top-1/2 -translate-y-1/2 -right-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
+        >
+          <FiChevronRight className="text-2xl" />
+        </button>
+      </div>
     </div>
   );
 }
