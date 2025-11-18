@@ -28,7 +28,7 @@ function Home() {
           </h3>
           <p className="text-sm text-gray-600 mb-2">Aug 2017 - Dec 2021</p>
           <p className="font-medium">
-            Pursued a Bachelor’s Degree in Journalism and Mass Communication.
+            Pursued a Bachelor's Degree in Journalism and Mass Communication.
           </p>
         </div>
 
@@ -60,6 +60,10 @@ function Home() {
         </ul>
       </section>
 
+      <section>
+        <h2 text-xl md:text-2xl font-semibold p-6>Contact info</h2>
+        <strong>Email: <a href="mailto:job.m.wambugu@gmail.com">job.m.wambugu@gmail.com</a></strong>
+      </section>
       
     </div>
 )
