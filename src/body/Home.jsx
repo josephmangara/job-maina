@@ -40,8 +40,8 @@ function Home() {
       </section>
 
       <section id="about" className="container mx-auto mb-6">
-        <h2  className="text-xl md:text-2xl  font-semibold p-6">About</h2>
-        <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-10">
+        <h2  className="text-xl md:text-2xl font-semibold p-6">About</h2>
+        <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-10 gap-6">
           <img 
             src="https://images.unsplash.com/photo-1711439858551-c96a3c310075?q=80&w=687&auto=format&fit=crop" 
             alt="person adjusting a camera on the street" 

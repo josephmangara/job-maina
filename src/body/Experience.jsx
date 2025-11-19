@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+// import { useState } from "react";
+// import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 function Experience() {
   const videos = [
@@ -20,15 +20,15 @@ function Experience() {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % videos.length);
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((prev) => (prev + 1) % videos.length);
+  // };
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
+  // };
 
   return (
     <div className="container mx-auto">
@@ -55,7 +55,25 @@ function Experience() {
       </div>
 
       {/* Videos */}
-      <div className="relative mx-auto">
+      <div className="mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          
+            {videos.map((video) => (
+              <div key={video.id} className="p-6">
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    className="w-full h-full"
+                    src={video.src}
+                    title={video.title}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            ))}
+        </div>
+      {/* <div className="relative mx-auto">
         <div className="overflow-hidden">
           <div
             className="flex transition-transform duration-500 ease-in-out"
@@ -76,9 +94,9 @@ function Experience() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
-        <button
+        {/* <button
           onClick={prevSlide}
           className="absolute top-1/2 -translate-y-1/2 -left-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
         >
@@ -89,7 +107,7 @@ function Experience() {
           className="absolute top-1/2 -translate-y-1/2 -right-4 bg-amber-200/80 p-3 rounded-full shadow-md hover:bg-white z-10"
         >
           <FiChevronRight className="text-2xl" />
-        </button>
+        </button> */}
       </div>
     </div>
   );
