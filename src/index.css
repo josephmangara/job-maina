@@ -34,8 +34,10 @@ body {
   to { width: 14ch; }
 }
 
-/* Cursor blink */
 @keyframes blink {
   50% { border-color: transparent }
 }
 
+html {
+  scroll-behavior: smooth;
+}

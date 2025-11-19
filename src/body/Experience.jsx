@@ -34,7 +34,6 @@ function Experience() {
     <div className="container mx-auto">
       <h2 className="text-xl md:text-2xl  font-semibold p-6">Experience</h2>
 
-      {/* K24 Experience */}
       <div className="mb-6">
         <h3 className="text-lg md:text-xl font-semibold">Television Exposure at K24</h3>
         <p className="text-sm text-gray-600 mb-2">Aug 2021 - Oct 2022</p>
@@ -49,7 +48,6 @@ function Experience() {
         </ul>
       </div>
 
-      {/* ZIWA TV Experience */}
       <div className="mb-6">
         <h3 className="text-lg md:text-xl font-semibold">Intern at ZIWA TV</h3>
         <p className="text-sm text-gray-600 mb-2">Aug 2020 - Nov 2020</p>
@@ -71,7 +69,6 @@ function Experience() {
                     src={video.src}
                     title={video.title}
                     loading="lazy"
-                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   ></iframe>

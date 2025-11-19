@@ -32,14 +32,14 @@ function Home() {
 
           <a
             href="#projects"
-            className="inline-block px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold transition"
+            className="inline-block px-6 py-3 bg-amber-700 hover:bg-amber-800 rounded-lg font-semibold transition"
           >
             View My Work
           </a>
         </div>
       </section>
 
-      <section className="container mx-auto mb-6">
+      <section id="about" className="container mx-auto mb-6">
         <h2  className="text-xl md:text-2xl  font-semibold p-6">About</h2>
         <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-10">
           <img 
@@ -51,8 +51,13 @@ function Home() {
         </div>
       </section>
 
-      <Skills />
-      <Experience />
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
 
       <section className="container mx-auto mb-6">
         <h2 className="text-xl md:text-2xl  font-semibold p-6">Education</h2>
