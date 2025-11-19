@@ -17,16 +17,9 @@ function Home() {
 
         <div className="relative max-w-3xl mx-auto text-center">
           <h1
-            className="text-3xl md:text-5xl font-bold mb-6 opacity-0 animate-fadeIn"
-            style={{
-              whiteSpace: "nowrap",
-              overflow: "hidden",
-              borderRight: "3px solid white",
-              animation:
-                "typing 3s steps(30, end), blink 0.7s step-end infinite, fadeIn 1.2s ease-out forwards",
-            }}
+            className="hero-typing text-3xl md:text-5xl font-bold mb-6 mx-auto"
           >
-            I am Job Maina 
+            I am Job Maina
           </h1>
 
           <p className="text-lg md:text-xl leading-relaxed mb-6">
