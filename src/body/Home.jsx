@@ -12,9 +12,16 @@ function Home() {
         <p>Hi, explore my portfolio.</p>
       </section>
 
-      <section>
-        <h2>About</h2>
-        <p>I am an ambitious go-getter who ensures the completion of tasks within the required time, adhering to high-quality standards. Well-balanced in emotional control when dealing with colleagues, cooperative in nature, and a proven team player. My primary goal is to add value to the workplace using the skills acquired in my career development journey. I am committed to serving diligently, continuously improving my educational training, and acquiring technical skills for personal growth and better service to organizations.</p>
+      <section className="container mx-auto mb-6">
+        <h2  className="text-xl md:text-2xl  font-semibold p-6">About</h2>
+        <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-10">
+          <img 
+            src="https://images.unsplash.com/photo-1711439858551-c96a3c310075?q=80&w=687&auto=format&fit=crop" 
+            alt="person adjusting a camera on the street" 
+            className="rounded-xl max-w-96"
+          />
+          <p className="flex items-center max-w-7/12">I am an ambitious go-getter who ensures the completion of tasks within the required time, adhering to high-quality standards. Well-balanced in emotional control when dealing with colleagues, cooperative in nature, and a proven team player. My primary goal is to add value to the workplace using the skills acquired in my career development journey. I am committed to serving diligently, continuously improving my educational training, and acquiring technical skills for personal growth and better service to organizations.</p>
+        </div>
       </section>
 
       <Skills />
