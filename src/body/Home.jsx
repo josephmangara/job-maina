@@ -31,7 +31,7 @@ function Home() {
           <p className="text-md md:text-lg mb-10">Explore my portfolio and recent work.</p>
 
           <a
-            href="#projects"
+            href="#stories"
             className="inline-block px-6 py-3 bg-amber-700 hover:bg-amber-800 rounded-lg font-semibold transition"
           >
             View My Work
@@ -101,8 +101,9 @@ function Home() {
 
       <section className="container mx-auto ">
         <h2 className="text-xl md:text-2xl font-semibold mb-6">Contact info</h2>
-        <strong>Email:</strong>
-        <a href="mailto:job.m.wambugu@gmail.com" className="" target="_blank"> job.m.wambugu@gmail.com</a>
+        <p>Reach out to me via <a href="mailto:job.m.wambugu@gmail.com" className="underline font-bold text-blue-500" target="_blank">email</a> for more information or collaboration opportunities.
+        </p>
+        
       </section>
       
     </div>
