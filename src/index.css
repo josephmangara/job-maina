@@ -26,7 +26,7 @@ body {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  animation: typing 5s steps(20), blink 0.7s step-end infinite, loop 12s infinite;
+  animation: typing 5s steps(20), blink 0.7s step-end infinite, loop 8s infinite;
 }
 
 @keyframes typing {
