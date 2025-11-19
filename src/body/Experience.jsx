@@ -32,7 +32,7 @@ function Experience() {
 
   return (
     <div className="container mx-auto">
-      <h2 className="text-xl md:text-2xl text-center font-semibold p-6">Experience</h2>
+      <h2 className="text-xl md:text-2xl  font-semibold p-6">Experience</h2>
 
       {/* K24 Experience */}
       <div className="mb-6">

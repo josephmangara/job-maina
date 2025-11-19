@@ -20,8 +20,8 @@ function Home() {
       <Skills />
       <Experience />
 
-      <section className="container mx-auto p-6">
-        <h2 className="text-xl md:text-2xl text-center font-semibold mb-6">Education</h2>
+      <section className="container mx-auto mb-6">
+        <h2 className="text-xl md:text-2xl  font-semibold p-6">Education</h2>
         <div className="mb-6">
           <h3 className="text-lg md:text-xl font-semibold">
             The Technical University of Kenya (School of Creative Arts and Media)
@@ -40,7 +40,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="mb-6">
+        <div className="">
           <h3 className="text-lg md:text-xl font-semibold">Kahawa Primary School</h3>
           <p className="text-sm text-gray-600 mb-2">2005 - 2012</p>
           <p className="font-medium">
@@ -49,7 +49,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="mb-6">
+      <section className="container mx-auto mb-6">
         <h2 className="text-xl md:text-2xl font-semibold p-6">Interests & Hobbies</h2>
         <ul className="list-disc pl-6 space-y-1">
           <li>Learning new languages and accents</li>
@@ -60,9 +60,10 @@ function Home() {
         </ul>
       </section>
 
-      <section>
-        <h2 text-xl md:text-2xl font-semibold p-6>Contact info</h2>
-        <strong>Email: <a href="mailto:job.m.wambugu@gmail.com">job.m.wambugu@gmail.com</a></strong>
+      <section className="container mx-auto ">
+        <h2 className="text-xl md:text-2xl font-semibold mb-6">Contact info</h2>
+        <strong>Email:</strong>
+        <a href="mailto:job.m.wambugu@gmail.com" className="" target="_blank"> job.m.wambugu@gmail.com</a>
       </section>
       
     </div>
