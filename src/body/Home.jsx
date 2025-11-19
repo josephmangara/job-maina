@@ -6,10 +6,35 @@ function Home() {
 
   return (
     <div>
-      <section className="hero-section">
-        <h1 className="text-2xl p-8">I am Job Maina</h1>
-        <p></p>
-        <p>Hi, explore my portfolio.</p>
+      <section className="relative bg-gray-900 text-white py-48 px-6">
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1920&auto=format&fit=crop')"
+          }}
+        ></div>
+
+        <div className="relative max-w-3xl mx-auto text-center">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">
+            I am Job Maina
+          </h1>
+
+          <p className="text-lg md:text-xl leading-relaxed mb-6">
+            A passionate journalist committed to telling compelling, accurate, and deeply human stories.  
+            I believe in the power of truth, transparency, and impactful storytelling that sparks conversation  
+            and helps shape an informed society.
+          </p>
+
+          <p className="text-md md:text-lg mb-10">Explore my portfolio and recent work.</p>
+
+          <a
+            href="#projects"
+            className="inline-block px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-semibold transition"
+          >
+            View My Work
+          </a>
+        </div>
       </section>
 
       <section className="container mx-auto mb-6">
