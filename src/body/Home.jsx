@@ -59,32 +59,31 @@ function Home() {
         <Experience />
       </section>
 
-      <section className="container mx-auto mb-6">
-        <h2 className="text-xl md:text-2xl  font-semibold p-6">Education</h2>
-        <div className="mb-6">
-          <h3 className="text-lg md:text-xl font-semibold">
-            The Technical University of Kenya (School of Creative Arts and Media)
-          </h3>
-          <p className="text-sm text-gray-600 mb-2">Aug 2017 - Dec 2021</p>
-          <p className="font-medium">
-            Pursued a Bachelor's Degree in Journalism and Mass Communication.
-          </p>
-        </div>
+      <section id="education" className="container mx-auto mb-12">
+        <h2 className="text-xl md:text-2xl font-semibold p-6">Education</h2>
+        <div className="relative border-l-2 border-gray-300 dark:border-gray-600 ml-6">
+          
+          <div className="mb-8 ml-6 relative">
+            <span className="absolute -left-6 top-1.5 w-3 h-3 bg-amber-700 rounded-full border border-white dark:border-gray-900"></span>
+            <h3 className="text-lg md:text-xl font-semibold">The Technical University of Kenya (School of Creative Arts and Media)</h3>
+            <p className="text-sm text-gray-600 mb-1">Aug 2017 - Dec 2021</p>
+            <p className="font-medium">Pursued a Bachelor's Degree in Journalism and Mass Communication.</p>
+          </div>
 
-        <div className="mb-6">
-          <h3 className="text-lg md:text-xl font-semibold">Ndururumo High School</h3>
-          <p className="text-sm text-gray-600 mb-2">2013 - 2016</p>
-          <p className="font-medium">
-            Attained the Kenya Certificate of Secondary Education [KCSE] with a Grade B plain.
-          </p>
-        </div>
+          <div className="mb-8 ml-6 relative">
+            <span className="absolute -left-6 top-1.5 w-3 h-3 bg-amber-700 rounded-full border border-white dark:border-gray-900"></span>
+            <h3 className="text-lg md:text-xl font-semibold">Ndururumo High School</h3>
+            <p className="text-sm text-gray-600 mb-1">2013 - 2016</p>
+            <p className="font-medium">Attained the Kenya Certificate of Secondary Education [KCSE] with a Grade B plain.</p>
+          </div>
 
-        <div className="">
-          <h3 className="text-lg md:text-xl font-semibold">Kahawa Primary School</h3>
-          <p className="text-sm text-gray-600 mb-2">2005 - 2012</p>
-          <p className="font-medium">
-            Obtained the Kenya Certificate of Primary Education [KCPE].
-          </p>
+          <div className="mb-8 ml-6 relative">
+            <span className="absolute -left-6 top-1.5 w-3 h-3 bg-amber-700 rounded-full border border-white dark:border-gray-900"></span>
+            <h3 className="text-lg md:text-xl font-semibold">Kahawa Primary School</h3>
+            <p className="text-sm text-gray-600 mb-1">2005 - 2012</p>
+            <p className="font-medium">Obtained the Kenya Certificate of Primary Education [KCPE].</p>
+          </div>
+
         </div>
       </section>
 
