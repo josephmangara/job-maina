@@ -12,7 +12,7 @@ import { RiPresentationFill } from "react-icons/ri";
 function Skills() {
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-6">
       <h2 className="text-xl md:text-2xl font-semibold p-6">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
         <div className="border border-amber-500 p-4 rounded-md shadow-md hover:shadow-xl hover:scale-102 transition">

@@ -1,5 +1,8 @@
 import Experience from "./Experience";
 import Skills from "./Skills";
+import { FaXTwitter } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
 
 
 function Home() {
@@ -14,22 +17,18 @@ function Home() {
               "url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1920&auto=format&fit=crop')"
           }}
         ></div>
-
         <div className="relative max-w-3xl mx-auto text-center">
           <h1
             className="hero-typing text-3xl md:text-5xl font-bold mb-6 mx-auto"
           >
             I am Job Maina
           </h1>
-
           <p className="text-lg md:text-xl leading-relaxed mb-6">
             A passionate journalist committed to telling compelling, accurate, and deeply human stories.  
             I believe in the power of truth, transparency, and impactful storytelling that sparks conversation  
             and helps shape an informed society.
           </p>
-
           <p className="text-md md:text-lg mb-10">Explore my portfolio and recent work.</p>
-
           <a
             href="#stories"
             className="inline-block px-6 py-3 bg-amber-700 hover:bg-amber-800 rounded-lg font-semibold transition"
@@ -39,7 +38,7 @@ function Home() {
         </div>
       </section>
 
-      <section id="about" className="container mx-auto mb-6">
+      <section id="about" className="container mx-auto mb-6 lg:mb-12">
         <h2  className="text-xl md:text-2xl font-semibold p-6">About</h2>
         <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-10 gap-6">
           <img 
@@ -98,11 +97,18 @@ function Home() {
         </ul>
       </section>
 
-      <section className="container mx-auto ">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6">Contact info</h2>
-        <p>Reach out to me via <a href="mailto:job.m.wambugu@gmail.com" className="underline font-bold text-blue-500" target="_blank">email</a> for more information or collaboration opportunities.
-        </p>
-        
+      <section className="container mx-auto mb-12">
+        <h2 className="text-xl md:text-2xl font-semibold p-6">Contact info</h2>
+        <div className="border border-amber-500 rounded-lg p-8 mx-auto">
+          <p>Reach out to me via <a href="mailto:job.m.wambugu@gmail.com" className="underline font-bold text-blue-500" target="_blank">email</a> for more information or collaboration opportunities.
+          </p>
+          <h3 className="font-semibold text-lg py-4 ">Socials</h3>
+          <div className="flex gap-12">
+            <a href="https://www.linkedin.com/" className="text-3xl" target="_blank"><CiLinkedin /></a>
+            <a href="https://x.com/" className="text-3xl" target="_blank"><FaXTwitter /></a>
+            <a href="https://www.instagram.com/" className="text-3xl" target="_blank"><FaInstagram /></a>
+          </div>
+        </div>        
       </section>
       
     </div>

@@ -31,7 +31,7 @@ function Experience() {
   // };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-6">
       <h2 className="text-xl md:text-2xl  font-semibold p-6">Experience</h2>
 
       <div className="mb-6">
@@ -48,7 +48,7 @@ function Experience() {
         </ul>
       </div>
 
-      <div className="mb-6">
+      <div className="mb-6 md:mb-12">
         <h3 className="text-lg md:text-xl font-semibold">Intern at ZIWA TV</h3>
         <p className="text-sm text-gray-600 mb-2">Aug 2020 - Nov 2020</p>
         <p className="font-medium">Reporter and News Anchor at ZIWA TV, a local Kiswahili station.</p>
