@@ -32,7 +32,7 @@ function Experience() {
 
   return (
     <div className="container mx-auto mb-6">
-      <h2 className="text-xl md:text-2xl  font-semibold p-6">Experience</h2>
+      <h2 className="text-xl md:text-2xl  font-semibold py-6">Experience</h2>
 
       <div className="mb-6">
         <h3 className="text-lg md:text-xl font-semibold">Television Exposure at K24</h3>
@@ -56,7 +56,7 @@ function Experience() {
 
       {/* Videos */}
       <div className="mx-auto" id="stories">
-        <h3 className="text-lg md:text-xl text-center font-semibold underline">Stories I have covered</h3>
+        <h3 className="text-xl md:text-2xl text-center font-semibold underline">Stories I have covered</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {videos.map((video) => (
               <div key={video.id} className="p-6">

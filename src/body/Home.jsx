@@ -39,7 +39,7 @@ function Home() {
       </section>
 
       <section id="about" className="container mx-auto mb-6 lg:mb-12">
-        <h2  className="text-xl md:text-2xl font-semibold p-6">About</h2>
+        <h2  className="text-xl md:text-2xl font-semibold text-center p-6">About</h2>
         <div className="flex flex-col md:flex-row md:space-x-8 lg:space-x-10 gap-6">
           <img 
             src="https://images.unsplash.com/photo-1711439858551-c96a3c310075?q=80&w=687&auto=format&fit=crop" 
@@ -59,7 +59,7 @@ function Home() {
       </section>
 
       <section id="education" className="container mx-auto mb-12">
-        <h2 className="text-xl md:text-2xl font-semibold p-6">Education</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-center p-6">Education</h2>
         <div className="relative border-l-2 border-gray-300 dark:border-gray-600 ml-6">
           
           <div className="mb-8 ml-6 relative">
@@ -86,20 +86,22 @@ function Home() {
         </div>
       </section>
 
-      <section className="container mx-auto mb-6">
-        <h2 className="text-xl md:text-2xl font-semibold p-6">Interests & Hobbies</h2>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Learning new languages and accents</li>
-          <li>Following local and geopolitical developments</li>
-          <li>Watching and writing comedy</li>
-          <li>Leadership activities</li>
-          <li>Swimming</li>
-        </ul>
+      <section id="interests" className="container mx-auto mb-12">
+        <h2 className="text-xl md:text-2xl font-semibold text-center p-6">Interests & Hobbies</h2>
+        <div className="flex flex-wrap justify-center gap-4 mt-6">
+          <span className="md:text-base px-4 py-2 bg-amber-100 text-amber-800 rounded-full">Languages & Accents</span>
+          <span className="md:text-lg px-4 py-2 bg-orange-100 text-orange-800 rounded-full">Geopolitics</span>
+          <span className="md:text-base px-4 py-2 bg-blue-100 text-blue-700 rounded-full">Comedy</span>
+          <span className="md:text-xl px-4 py-2 bg-green-100 text-green-800 rounded-full">Leadership</span>
+          <span className="md:text-lg px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Swimming</span>
+        </div>
       </section>
 
-      <section className="container mx-auto mb-12">
+
+      <section className="container mx-auto text-center mb-12">
         <h2 className="text-xl md:text-2xl font-semibold p-6">Contact info</h2>
         <div className="border border-amber-500 rounded-lg p-8 mx-auto">
+          <p className="mb-4">Let's connect and tell stories together.</p>
           <p>Reach out to me via <a href="mailto:job.m.wambugu@gmail.com" className="underline font-bold text-blue-500" target="_blank">email</a> for more information or collaboration opportunities.
           </p>
           <h3 className="font-semibold text-lg py-4 ">Socials</h3>
