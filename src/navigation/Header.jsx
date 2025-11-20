@@ -1,9 +1,7 @@
-
-
 function Header() {
-
   return (
-    <header className="w-full border-b px-6 py-4 flex justify-between items-center">
+    <header className="w-full fixed top-0 left-0 z-50 px-6 py-4 flex justify-between items-center
+                       bg-white/30 backdrop-blur-md">
       <h1 className="text-xl font-semibold tracking-wide">
         <a href="/">Job Maina</a>
       </h1>

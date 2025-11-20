@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div>
-      <section className="relative bg-gray-900 text-white py-48 px-6">
+      <section className="relative bg-gray-900 text-white py-48 px-6 pt-28">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
