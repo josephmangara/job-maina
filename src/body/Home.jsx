@@ -105,7 +105,7 @@ function Home() {
             <p>Reach out to me via <a href="mailto:job.m.wambugu@gmail.com" className="underline font-bold text-blue-500" target="_blank">email</a> for more information or collaboration opportunities.
             </p>
             <h3 className="font-semibold text-lg py-4 ">Socials</h3>
-            <div className="flex gap-12">
+            <div className="flex gap-12 justify-center">
               <a href="https://www.linkedin.com/" className="text-3xl" target="_blank"><CiLinkedin /></a>
               <a href="https://x.com/" className="text-3xl" target="_blank"><FaXTwitter /></a>
               <a href="https://www.instagram.com/" className="text-3xl" target="_blank"><FaInstagram /></a>
