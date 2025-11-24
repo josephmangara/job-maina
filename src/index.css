@@ -33,12 +33,16 @@ body {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  animation: typing 3s steps(14, end) infinite alternate, blink 0.7s step-end infinite;
+  animation: typing 8s steps(13, end) infinite alternate, blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0ch; }
-  to { width: 14ch; }
+  0% {width: 0;}
+  37.5% { width: 13ch; }
+  100% { width: 13ch; }
+
+  /* from { width: 0ch; }
+  to { width: 14ch; } */
 }
 
 @keyframes blink {
